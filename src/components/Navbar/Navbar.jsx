@@ -36,6 +36,8 @@ function Navbar() {
           <a href="https://lms.eduverseacademy.in/login" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Login / Signup</a>
         </div>
 
+        <a href="https://lms.eduverseacademy.in/login" className="nav-login-mobile btn btn-primary" target="_blank" rel="noopener noreferrer">Login / Signup</a>
+
         <button
           className={`hamburger ${menuOpen ? 'active' : ''}`}
           onClick={() => setMenuOpen(!menuOpen)}

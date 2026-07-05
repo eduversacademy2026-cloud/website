@@ -498,7 +498,8 @@
   .hero-title { font-size: 32px; }
   .hero-subtitle { font-size: 14.5px; margin-bottom: 28px; }
   .hero-btn { padding: 14px 22px; font-size: 14px; }
-  .hero-cta { gap: 12px; margin-bottom: 36px; }
+  .hero-cta { gap: 10px; margin-bottom: 32px; flex-direction: column; align-items: stretch; }
+  .hero-cta .hero-btn { width: 100%; justify-content: center; }
   .hero-visual { height: 220px; }
   .hero-visual__card { width: 200px; }
   .hv-float { display: none; }
@@ -507,4 +508,8 @@
   .hero-trust__avatar { width: 32px; height: 32px; font-size: 11px; }
   .hero-stats-wrapper { margin-top: 36px; padding-bottom: 20px; }
   .hero-stat strong { font-size: clamp(20px, 6vw, 28px); }
+  .hero-stat span { font-size: 11px; }
+  .hero-stat { padding: 18px 10px; gap: 4px; }
+  .hero-stat__icon { width: 32px; height: 32px; border-radius: 8px; }
+  .hero-badge { padding: 6px 14px 6px 10px; margin-bottom: 24px; }
 }

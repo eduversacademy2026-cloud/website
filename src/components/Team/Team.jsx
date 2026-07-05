@@ -40,13 +40,8 @@ function Team() {
         </Reveal>
         <RevealStagger stagger={150} direction="up" className="teachers-grid">
           {TEACHERS.map((t, i) => (
-            <div className="teacher-card" key={i}>
-              <div className="teacher-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" width="28" height="28">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-              </div>
+            <div className="leader-card" key={i}>
+              <div className="avatar-circle">{t.initials}</div>
               <h4>{t.name}</h4>
               <p className="role">{t.role}</p>
               <p className="bio">{t.bio}</p>
