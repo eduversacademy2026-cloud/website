@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import './Hero.css'
 
-/* ===== Animated Counter Hook ===== */
 function useCountUp(target, duration = 2000) {
   const [count, setCount] = useState(0)
   const ref = useRef(null)
@@ -43,11 +42,9 @@ function AnimatedStat({ target, suffix, label, icon }) {
   )
 }
 
-/* ===== Hero Component ===== */
 function Hero() {
   return (
     <section className="hero" id="home">
-      {/* Layered background effects */}
       <div className="hero-noise" aria-hidden="true" />
       <div className="hero-gradient-orb hero-gradient-orb--1" aria-hidden="true" />
       <div className="hero-gradient-orb hero-gradient-orb--2" aria-hidden="true" />
@@ -56,7 +53,6 @@ function Hero() {
       <div className="hero-radial-fade" aria-hidden="true" />
 
       <div className="container hero__inner">
-        {/* Left column */}
         <div className="hero-content">
 
           <h1 className="hero-title">
@@ -80,7 +76,6 @@ function Hero() {
             </a>
           </div>
 
-          {/* Trust signals */}
           <div className="hero-trust">
             <div className="hero-trust__avatars">
               <div className="hero-trust__avatar" style={{ background: '#2563EB' }}>R</div>
@@ -95,7 +90,6 @@ function Hero() {
           </div>
         </div>
 
-        {/* Right column — Hero Image */}
         <div className="hero-visual">
           <div className="hero-visual__glow" />
           <img
@@ -106,7 +100,6 @@ function Hero() {
         </div>
       </div>
 
-      {/* Stats bar */}
       <div className="hero-stats-wrapper">
         <div className="container">
           <div className="hero-stats">

@@ -20,7 +20,7 @@
 /* Teaching Staff Grid */
 .teachers-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
 
-/* ===== Mobile Styles ===== */
+/* Mobile */
 @media (max-width: 768px) {
   .leaders-grid {
     grid-template-columns: 1fr;

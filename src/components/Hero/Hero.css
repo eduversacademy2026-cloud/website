@@ -1,6 +1,4 @@
-/* =============================================================
-   HERO — Premium Redesign
-   ============================================================= */
+/* Hero Section */
 .hero {
   position: relative;
   min-height: 100svh;
@@ -12,7 +10,7 @@
   padding: calc(var(--nav-h) + 60px) 0 0;
 }
 
-/* ===== Background Layers ===== */
+/* Background */
 .hero-noise {
   position: absolute;
   inset: 0;
@@ -71,7 +69,7 @@
   pointer-events: none;
 }
 
-/* ===== Layout ===== */
+/* Layout */
 .hero__inner {
   position: relative;
   z-index: 2;
@@ -81,7 +79,7 @@
   align-items: center;
 }
 
-/* ===== Left Column — Content ===== */
+/* Content */
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -228,7 +226,7 @@
   color: rgba(255,255,255,.4);
 }
 
-/* ===== Right Column — Visual ===== */
+/* Visual */
 .hero-visual {
   position: relative;
   height: 520px;
@@ -263,7 +261,7 @@
   z-index: 2;
 }
 
-/* Main dashboard card */
+/* Dashboard card */
 .hero-visual__card {
   position: absolute;
   top: 50%; left: 50%;
@@ -408,7 +406,7 @@
 .hv-notification strong { color: #fff; }
 @keyframes slideInRight { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: translateX(0); } }
 
-/* ===== Stats Bar ===== */
+/* Stats */
 .hero-stats-wrapper {
   position: relative;
   z-index: 3;
@@ -463,13 +461,13 @@
   font-weight: 500;
 }
 
-/* ===== Animations ===== */
+/* Animations */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ===== Responsive ===== */
+/* Responsive */
 @media (max-width: 1024px) {
   .hero__inner { grid-template-columns: 1fr; gap: 40px; text-align: center; }
   .hero-content { align-items: center; }

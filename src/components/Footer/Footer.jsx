@@ -47,7 +47,7 @@ function Footer() {
         </div>
         <div className="footer-bottom">
           <span>&copy; {new Date().getFullYear()} Eduverse Academy. All rights reserved.</span>
-          <span>Built with care for students everywhere.</span>
+          <span>Designed &amp; Developed by Eduverse Team</span>
         </div>
       </div>
     </footer>

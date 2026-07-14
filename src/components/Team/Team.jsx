@@ -31,7 +31,6 @@ function Team() {
           ))}
         </RevealStagger>
 
-        {/* Teaching Staff */}
         <Reveal direction="up">
           <div className="section-head center" style={{ marginTop: '60px' }}>
             <p className="eyebrow">Teaching Staff</p>

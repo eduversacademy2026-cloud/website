@@ -6,7 +6,6 @@ import Courses from './components/Courses/Courses'
 import Achievements from './components/Achievements/Achievements'
 import Team from './components/Team/Team'
 import Testimonials from './components/Testimonials/Testimonials'
-import Gallery from './components/Gallery/Gallery'
 import Admission from './components/Admission/Admission'
 import FAQ from './components/FAQ/FAQ'
 import Contact from './components/Contact/Contact'
@@ -25,14 +24,12 @@ function App() {
         <Achievements />
         <Team />
         <Testimonials />
-        {/* <Gallery /> */}
         <Admission />
         <FAQ />
         <Contact />
       </main>
       <Footer />
 
-      {/* WhatsApp floating button */}
       <a
         href="https://wa.me/919999999999"
         className="whatsapp-float"

@@ -1,4 +1,4 @@
-/* ===== CONTACT SECTION — Premium Redesign ===== */
+/* Contact Section */
 .contact-section {
   padding: 90px 0;
   background: #060B18;
@@ -49,7 +49,7 @@
   align-items: start;
 }
 
-/* ===== Form Card ===== */
+/* Form Card */
 .contact-form-card {
   background: #0D1424;
   border: 1.5px solid rgba(255,255,255,.08);
@@ -235,7 +235,7 @@
   padding: 12px;
 }
 
-/* ===== Right Column — Info ===== */
+/* Info Column */
 .contact-info-side {
   display: flex;
   flex-direction: column;
@@ -307,7 +307,7 @@
   font-weight: 500;
 }
 
-/* ===== Responsive ===== */
+/* Responsive */
 @media (max-width: 900px) {
   .contact-grid { grid-template-columns: 1fr; }
   .contact-header { margin-bottom: 36px; }
