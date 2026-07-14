@@ -58,10 +58,6 @@ function Hero() {
       <div className="container hero__inner">
         {/* Left column */}
         <div className="hero-content">
-          <div className="hero-badge">
-            <span className="hero-badge__pulse" />
-            <span className="hero-badge__text">Admissions Open for 2025-26</span>
-          </div>
 
           <h1 className="hero-title">
             <span className="hero-title__line">Where every</span>
