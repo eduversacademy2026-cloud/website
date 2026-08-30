@@ -96,7 +96,7 @@ function doGet(e) {
  * Uncomment and update the email address if you want notifications
  */
 // function sendNotification(name, phone, email) {
-//   const recipient = 'contact@eduverseacademy.in';
+//   const recipient = 'eduversacademy2026@gmail.com';
 //   const subject = `New Lead: ${name}`;
 //   const body = `
 //     New contact form submission:

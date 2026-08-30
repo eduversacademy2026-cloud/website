@@ -163,7 +163,7 @@ function Contact() {
                   </div>
                   <div>
                     <strong>Email</strong>
-                    <span>contact@eduverseacademy.in</span>
+                    <span><a href="mailto:eduversacademy2026@gmail.com">eduversacademy2026@gmail.com</a></span>
                   </div>
                 </div>
                 <div className="ci-item">

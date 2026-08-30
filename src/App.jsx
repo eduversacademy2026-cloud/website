@@ -5,6 +5,7 @@ import WhyUs from './components/WhyUs/WhyUs'
 import Courses from './components/Courses/Courses'
 import Achievements from './components/Achievements/Achievements'
 import Team from './components/Team/Team'
+import Gallery from './components/Gallery/Gallery'
 import Testimonials from './components/Testimonials/Testimonials'
 import Admission from './components/Admission/Admission'
 import FAQ from './components/FAQ/FAQ'
@@ -23,6 +24,7 @@ function App() {
         <Courses />
         <Achievements />
         <Team />
+        <Gallery />
         <Testimonials />
         <Admission />
         <FAQ />

@@ -92,6 +92,20 @@ h1, h2, h3, h4 { font-family: 'Sora', sans-serif; line-height: 1.13; font-weight
 }
 .section-head { max-width: 680px; margin-bottom: 44px; }
 .section-head.center { margin-inline: auto; text-align: center; }
+
+/* Animated Lottie accent for section headers */
+.section-lottie {
+  width: clamp(72px, 9vw, 104px);
+  height: clamp(72px, 9vw, 104px);
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-head:not(.center) .section-lottie { margin-left: 0; }
+@media (max-width: 480px) {
+  .section-lottie { width: 68px; height: 68px; margin-bottom: 8px; }
+}
 .section-title { font-size: clamp(24px, 3.4vw, 42px); margin-bottom: 12px; color: var(--ink); }
 .section-title .accent {
   background: var(--grad-blue-cyan);

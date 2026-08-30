@@ -1,6 +1,9 @@
 import { LEADERS, TEACHERS } from '../../data'
 import { Reveal, RevealStagger } from '../../hooks/useReveal.jsx'
+import LottieIcon from '../Lottie/LottieIcon'
 import './Team.css'
+
+const LOTTIE_TEAM = 'https://res.cloudinary.com/yyxm1nvc/image/upload/v1788092930/Teamwork_Lottie_animation_junmi4.gif'
 
 function Team() {
   return (
@@ -8,6 +11,9 @@ function Team() {
       <div className="container">
         <Reveal direction="up">
           <div className="section-head center">
+            <div className="section-lottie">
+              <LottieIcon src={LOTTIE_TEAM} />
+            </div>
             <p className="eyebrow">Our Team</p>
             <h2 className="section-title" id="team-heading">The people behind <span className="accent">Eduverse Academy</span></h2>
             <p className="section-sub">Led by educators who believe every student deserves a clear path forward.</p>

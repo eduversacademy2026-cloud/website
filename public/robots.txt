@@ -1,5 +1,13 @@
+# robots.txt for Eduverse Academy
 User-agent: *
 Allow: /
-Disallow: /node_modules/
 
+# Allow major search and social crawlers full access
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap
 Sitemap: https://eduverseacademy.in/sitemap.xml

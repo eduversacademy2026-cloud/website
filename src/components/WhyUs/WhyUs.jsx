@@ -1,6 +1,9 @@
 import { FEATURES } from '../../data'
 import { Reveal, RevealStagger } from '../../hooks/useReveal.jsx'
+import LottieIcon from '../Lottie/LottieIcon'
 import './WhyUs.css'
+
+const LOTTIE_KNOWLEDGE = 'https://res.cloudinary.com/yyxm1nvc/image/upload/v1788092741/Question_Mark_For_The_Internet_Stud_eoyici.gif'
 
 const IC_COLORS = ['ic-blue', 'ic-cyan', 'ic-violet', 'ic-gold', 'ic-blue', 'ic-cyan', 'ic-violet']
 
@@ -10,6 +13,9 @@ function WhyUs() {
       <div className="container">
         <Reveal direction="up">
           <div className="section-head center">
+            <div className="section-lottie">
+              <LottieIcon src={LOTTIE_KNOWLEDGE} />
+            </div>
             <p className="eyebrow">Why Choose Us</p>
             <h2 className="section-title" id="whyus-heading">What makes <span className="accent">Eduverse Academy</span> different</h2>
             <p className="section-sub">Seven pillars that define how we approach education — and why families across Maharashtra trust us.</p>

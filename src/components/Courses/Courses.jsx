@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import { COURSES, COURSE_CATEGORIES } from '../../data'
 import { Reveal, RevealStagger } from '../../hooks/useReveal.jsx'
+import LottieIcon from '../Lottie/LottieIcon'
 import './Courses.css'
+
+const LOTTIE_BOOKS = 'https://res.cloudinary.com/yyxm1nvc/image/upload/v1788092563/Student_pn32s2.gif'
 
 function Courses() {
   const [active, setActive] = useState('all')
@@ -12,6 +15,9 @@ function Courses() {
       <div className="container">
         <Reveal direction="up">
           <div className="section-head center">
+            <div className="section-lottie">
+              <LottieIcon src={LOTTIE_BOOKS} />
+            </div>
             <p className="eyebrow">Programmes</p>
             <h2 className="section-title" id="courses-heading">Courses built for <span className="accent">every stage</span> of learning</h2>
             <p className="section-sub">From early foundations to government exams — pick a track and start at your own pace.</p>

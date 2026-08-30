@@ -40,7 +40,7 @@ function Footer() {
             <h5>Contact</h5>
             <ul className="footer-links">
               <li>Aurangabad, Maharashtra, India</li>
-              <li><a href="mailto:contact@eduverseacademy.in">contact@eduverseacademy.in</a></li>
+              <li><a href="mailto:eduversacademy2026@gmail.com">eduversacademy2026@gmail.com</a></li>
               <li>Live &amp; Recorded Classes</li>
             </ul>
           </div>

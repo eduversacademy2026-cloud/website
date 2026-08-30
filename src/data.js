@@ -33,7 +33,8 @@ export const COURSES = [
 ]
 
 export const LEADERS = [
-  { initials: 'RF', name: 'Rehan Fazal', role: 'Founder & Owner', bio: 'D.Ed, MA, B.Ed', image: 'https://res.cloudinary.com/yyxm1nvc/image/upload/v1783197224/rehan_bhai-removebg-preview_ttwelr.png' },
+  { initials: 'IS', name: 'Ishrat Jabeen Shaikh Rehan', role: 'Owner', bio: 'Kausar Park, Naregaon, Aurangabad, Maharashtra', image: 'https://res.cloudinary.com/yyxm1nvc/image/upload/v1788089416/o1-removebg-preview_efrus0.png' },
+  { initials: 'RF', name: 'Rehan Fazal', role: 'Member', bio: 'D.Ed, MA, B.Ed', image: 'https://res.cloudinary.com/yyxm1nvc/image/upload/v1783197224/rehan_bhai-removebg-preview_ttwelr.png' },
   { initials: 'AJ', name: 'Ab Jaleel', role: 'Admin & IT Team', bio: 'Keeps the learning platform reliable, secure, and easy to use.', image: 'https://res.cloudinary.com/yyxm1nvc/image/upload/f_auto,q_auto/jallelbhai_zzbxy5' },
   { initials: 'AM', name: 'Abdul Muheet', role: 'Admin & IT Team', bio: 'Builds and maintains the digital tools behind every class and test.', image: 'https://res.cloudinary.com/yyxm1nvc/image/upload/v1783195181/muheetbhai-removebg-preview_ek9cyw.png' }
 ]

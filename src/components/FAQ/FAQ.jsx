@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import { FAQS } from '../../data'
 import { Reveal, RevealStagger } from '../../hooks/useReveal.jsx'
+import LottieIcon from '../Lottie/LottieIcon'
 import './FAQ.css'
+
+const LOTTIE_BOOK_IDEA = 'https://res.cloudinary.com/yyxm1nvc/image/upload/v1788092563/Book_Idea_n3jerp.gif'
 
 function FAQ() {
   const [openIdx, setOpenIdx] = useState(null)
@@ -11,6 +14,9 @@ function FAQ() {
       <div className="container">
         <Reveal direction="up">
           <div className="section-head center">
+            <div className="section-lottie">
+              <LottieIcon src={LOTTIE_BOOK_IDEA} />
+            </div>
             <p className="eyebrow">FAQ</p>
             <h2 className="section-title" id="faq-heading">Frequently asked <span className="accent">questions</span></h2>
           </div>
