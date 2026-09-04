@@ -137,7 +137,9 @@ function Hero() {
       <div className="container hero__inner">
         <div className="hero-statement">
           <h1 className="hero-title" id="hero-title">
-            <span className="hero-title__l1">Where every</span>
+            <span className="hero-title__l1">
+              Where <span className="hero-title__every">every</span>
+            </span>
             <span className="hero-title__l2">
               student <em>grows</em>
             </span>
