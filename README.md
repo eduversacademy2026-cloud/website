@@ -1,1 +1,1 @@
-complted
+COMPLETED
