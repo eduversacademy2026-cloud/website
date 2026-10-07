@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap');
+
+:root {
+  --primary: #2563EB;
+  --primary-dark: #1E3A8A;
+  --primary-mid: #1D4ED8;
+  --primary-light: #60A5FA;
+  --primary-xlight: #BFDBFE;
+  --accent-cyan: #06B6D4;
+  --accent-violet: #7C3AED;
+  --accent-gold: #F59E0B;
+  --ink: #0A1628;
+  --ink-soft: #1E2D45;
+  --muted: #64748B;
+  --muted-light: #94A3B8;
+  --bg-soft: #F0F5FF;
+  --bg-white: #FFFFFF;
+  --border: #E2E8F4;
+  --border-subtle: #EFF4FF;
+  --grad-primary: linear-gradient(135deg, #2563EB 0%, #1E40AF 55%, #1E3A8A 100%);
+  --grad-blue-cyan: linear-gradient(135deg, #2563EB 0%, #06B6D4 100%);
+  --grad-hero: linear-gradient(145deg, #0A1628 0%, #0F2057 40%, #1E1B4B 70%, #0A1628 100%);
+  --shadow-sm: 0 2px 12px rgba(15,23,42,0.06);
+  --shadow-md: 0 12px 32px rgba(30,58,138,0.12);
+  --shadow-glow: 0 20px 48px -12px rgba(37,99,235,0.50);
+  --ease: cubic-bezier(.2,.8,.2,1);
+  --ease-spring: cubic-bezier(.34,1.56,.64,1);
+  --nav-h: 72px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--ink);
+  background: var(--bg-white);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+h1, h2, h3, h4 { font-family: 'Sora', sans-serif; line-height: 1.13; font-weight: 700; letter-spacing: -0.02em; }
+
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 80px 0; scroll-margin-top: var(--nav-h); position: relative; }
+.section.alt { background: var(--bg-soft); }
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: transform .28s var(--ease), box-shadow .28s var(--ease);
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+.btn-primary { background: var(--grad-primary); color: #fff; box-shadow: var(--shadow-md); }
+.btn-primary:hover { transform: translateY(-3px) scale(1.02); box-shadow: var(--shadow-glow); }
+.btn-outline-white { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.38); }
+.btn-outline-white:hover { background: rgba(255,255,255,.1); transform: translateY(-2px); }
+.btn-ghost { background: #fff; color: var(--primary); border: 1.5px solid var(--border); }
+.btn-ghost:hover { transform: translateY(-3px); border-color: var(--primary-light); box-shadow: var(--shadow-sm); }
+
+/* Section headers */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+.eyebrow::before {
+  content: '';
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--grad-blue-cyan);
+  flex-shrink: 0;
+}
+.section-head { max-width: 680px; margin-bottom: 44px; }
+.section-head.center { margin-inline: auto; text-align: center; }
+
+/* Animated Lottie accent for section headers */
+.section-lottie {
+  width: clamp(72px, 9vw, 104px);
+  height: clamp(72px, 9vw, 104px);
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-head:not(.center) .section-lottie { margin-left: 0; }
+@media (max-width: 480px) {
+  .section-lottie { width: 68px; height: 68px; margin-bottom: 8px; }
+}
+.section-title { font-size: clamp(24px, 3.4vw, 42px); margin-bottom: 12px; color: var(--ink); }
+.section-title .accent {
+  background: var(--grad-blue-cyan);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.section-sub { color: var(--muted); font-size: 15px; line-height: 1.7; }
+
+@media (max-width: 768px) { .section { padding: 56px 0; } }
+@media (max-width: 480px) { .section { padding: 44px 0; } .container { padding: 0 16px; } }
+
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 0 0 10px 0;
+  z-index: 9999;
+  font-weight: 600;
+  font-size: 14px;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+
+/* Scroll Reveal Animations */
+
+/* Base reveal — hidden state */
+.reveal {
+  opacity: 0;
+  transition:
+    opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+    filter 0.9s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+  filter: blur(4px);
+}
+
+/* Direction variants — hidden state */
+.reveal--up { transform: translateY(50px); }
+.reveal--down { transform: translateY(-50px); }
+.reveal--left { transform: translateX(60px); }
+.reveal--right { transform: translateX(-60px); }
+.reveal--scale { transform: scale(0.92); }
+.reveal--rotate { transform: translateY(40px) rotate(3deg); }
+
+/* Revealed state */
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1) rotate(0deg);
+  filter: blur(0px);
+}
+
+/* Stagger container — children animate sequentially */
+.reveal-stagger > * {
+  opacity: 0;
+  filter: blur(3px);
+  transition:
+    opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-stagger--up > * { transform: translateY(40px); }
+.reveal-stagger--left > * { transform: translateX(50px); }
+.reveal-stagger--right > * { transform: translateX(-50px); }
+.reveal-stagger--scale > * { transform: scale(0.9); }
+
+/* Stagger revealed */
+.reveal-stagger.revealed > * {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+  filter: blur(0px);
+}
+
+/* Stagger delays for each child (up to 12 items) */
+.reveal-stagger.revealed > *:nth-child(1) { transition-delay: calc(var(--stagger, 100ms) * 0); }
+.reveal-stagger.revealed > *:nth-child(2) { transition-delay: calc(var(--stagger, 100ms) * 1); }
+.reveal-stagger.revealed > *:nth-child(3) { transition-delay: calc(var(--stagger, 100ms) * 2); }
+.reveal-stagger.revealed > *:nth-child(4) { transition-delay: calc(var(--stagger, 100ms) * 3); }
+.reveal-stagger.revealed > *:nth-child(5) { transition-delay: calc(var(--stagger, 100ms) * 4); }
+.reveal-stagger.revealed > *:nth-child(6) { transition-delay: calc(var(--stagger, 100ms) * 5); }
+.reveal-stagger.revealed > *:nth-child(7) { transition-delay: calc(var(--stagger, 100ms) * 6); }
+.reveal-stagger.revealed > *:nth-child(8) { transition-delay: calc(var(--stagger, 100ms) * 7); }
+.reveal-stagger.revealed > *:nth-child(9) { transition-delay: calc(var(--stagger, 100ms) * 8); }
+.reveal-stagger.revealed > *:nth-child(10) { transition-delay: calc(var(--stagger, 100ms) * 9); }
+.reveal-stagger.revealed > *:nth-child(11) { transition-delay: calc(var(--stagger, 100ms) * 10); }
+.reveal-stagger.revealed > *:nth-child(12) { transition-delay: calc(var(--stagger, 100ms) * 11); }
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-stagger > * {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+}
+
+
+/* WhatsApp floating button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(37,211,102,.4), 0 2px 8px rgba(0,0,0,.15);
+  transition: transform .3s ease, box-shadow .3s ease;
+  animation: whatsappBounce 2s ease-in-out infinite;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 28px rgba(37,211,102,.5), 0 4px 12px rgba(0,0,0,.2);
+}
+@keyframes whatsappBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@media (max-width: 480px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 18px;
+    right: 18px;
+  }
+}
