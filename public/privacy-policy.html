@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Eduverse Academy</title>
+  <meta name="description" content="Privacy Policy for Eduverse Academy. Learn how we collect, use, and protect your personal information." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.eduverseacademy.in/privacy-policy" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #1e293b;
+      background: #f8fafc;
+    }
+    a { color: #2563EB; text-underline-offset: 3px; }
+    a:hover { color: #1d4ed8; }
+
+    /* Top bar */
+    .topbar {
+      background: #070F1F;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .topbar a { color: #fff; text-decoration: none; font-size: 15px; font-weight: 700; }
+    .topbar .back { color: #7A8BAD; font-size: 13px; font-weight: 400; }
+    .topbar .back:hover { color: #fff; }
+
+    /* Container */
+    main { max-width: 840px; margin: 0 auto; padding: 52px 24px 88px; }
+
+    /* Title */
+    h1 {
+      font-size: clamp(26px, 5vw, 40px);
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -.02em;
+      margin-bottom: 14px;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 24px;
+      font-size: 13px;
+      color: #64748b;
+      background: #f1f5f9;
+      border-left: 3px solid #3B82F6;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-bottom: 18px;
+    }
+    .intro {
+      font-size: 15px;
+      color: #334155;
+      margin-bottom: 12px;
+    }
+    .title-block {
+      padding-bottom: 30px;
+      border-bottom: 2px solid #e2e8f0;
+      margin-bottom: 36px;
+    }
+
+    /* TOC */
+    .toc {
+      background: #EFF6FF;
+      border: 1px solid #BFDBFE;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 52px;
+    }
+    .toc-label {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: #3B82F6;
+      margin-bottom: 12px;
+    }
+    .toc ol {
+      padding-left: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7px 28px;
+      font-size: 14px;
+    }
+    .toc a { color: #1D4ED8; text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+
+    /* Sections */
+    section {
+      margin-bottom: 52px;
+      scroll-margin-top: 80px;
+    }
+    h2 {
+      font-size: 21px;
+      font-weight: 700;
+      color: #0f172a;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #DBEAFE;
+      margin-bottom: 18px;
+    }
+    h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1e3a5f;
+      margin: 22px 0 10px;
+    }
+    p { color: #334155; margin-bottom: 14px; }
+    p:last-child { margin-bottom: 0; }
+
+    /* Lists */
+    ul, ol { padding-left: 22px; margin-bottom: 14px; }
+    li { color: #334155; margin-bottom: 9px; font-size: 15px; }
+
+    /* Info box */
+    .infobox {
+      background: #F0F9FF;
+      border: 1px solid #BAE6FD;
+      border-left: 4px solid #0EA5E9;
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin-top: 18px;
+    }
+    .infobox-row {
+      display: flex;
+      gap: 12px;
+      padding: 7px 0;
+      border-bottom: 1px solid rgba(14,165,233,.12);
+      font-size: 14px;
+      color: #0c4a6e;
+    }
+    .infobox-row:last-child { border-bottom: none; }
+    .infobox-label { font-weight: 700; min-width: 100px; flex-shrink: 0; color: #075985; }
+
+    /* Not-collected grid */
+    .notcollect {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin: 14px 0;
+    }
+    .notcollect-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      background: #FFF1F2;
+      border: 1px solid #FECDD3;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 14px;
+      color: #4c0519;
+    }
+    .notcollect-x { color: #E11D48; font-weight: 900; flex-shrink: 0; }
+
+    /* Highlight boxes */
+    .highlight {
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin: 18px 0;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .highlight-red  { background: #FFF1F2; border: 1px solid #FECDD3; border-left: 4px solid #E11D48; color: #4c0519; }
+    .highlight-blue { background: #EFF6FF; border: 1px solid #BFDBFE; border-left: 4px solid #3B82F6; color: #1e3a5f; }
+    .highlight-yellow { background: #FFFBEB; border: 1px solid #FDE68A; border-left: 4px solid #F59E0B; color: #78350f; }
+    .highlight ul { margin-top: 8px; }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 20px;
+      font-size: 14px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+    }
+    thead tr { background: #1e293b; color: #fff; }
+    th { padding: 12px 14px; font-weight: 600; font-size: 13px; text-align: left; }
+    td { padding: 11px 14px; color: #334155; vertical-align: top; border-bottom: 1px solid #f1f5f9; }
+    tbody tr:last-child td { border-bottom: none; }
+    tbody tr:nth-child(even) { background: #f8fafc; }
+
+    /* Steps */
+    .steps { display: flex; flex-direction: column; gap: 14px; margin: 18px 0; }
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 14px 18px;
+      font-size: 15px;
+      color: #334155;
+    }
+    .step-num {
+      min-width: 30px;
+      height: 30px;
+      background: #2563EB;
+      color: #fff;
+      font-weight: 800;
+      font-size: 14px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .section-highlight {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 32px;
+      box-shadow: 0 1px 4px rgba(0,0,0,.04);
+    }
+
+    /* Rights */
+    .rights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin: 16px 0;
+    }
+    .rights-item {
+      display: flex;
+      gap: 14px;
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .rights-icon { font-size: 22px; flex-shrink: 0; }
+    .rights-item strong { display: block; font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+    .rights-item p { font-size: 13px; color: #64748b; margin: 0; }
+
+    /* Contact */
+    .contact-box {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 28px;
+      margin-top: 18px;
+    }
+    .contact-row { display: flex; gap: 14px; margin-bottom: 20px; }
+    .contact-row:last-child { margin-bottom: 0; }
+    .contact-row strong { display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: #64748b; margin-bottom: 3px; }
+    .contact-row span, .contact-row a { display: block; font-size: 15px; color: #1e293b; }
+    .contact-note { font-size: 12px; color: #64748b; font-style: italic; margin-top: 2px; }
+
+    /* Footer */
+    .page-footer {
+      border-top: 1px solid #e2e8f0;
+      padding-top: 26px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+    .page-footer a { color: #2563EB; font-weight: 600; text-decoration: none; }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      main { padding: 36px 16px 64px; }
+      .toc ol { grid-template-columns: 1fr; }
+      .rights { grid-template-columns: 1fr; }
+      .notcollect { grid-template-columns: 1fr; }
+      .section-highlight { padding: 20px 16px; }
+      table { display: block; overflow-x: auto; }
+      .meta { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <a href="https://www.eduverseacademy.in/">&#127979; Eduverse Academy</a>
+    <a href="https://www.eduverseacademy.in/" class="back">&#8592; Back to Home</a>
+  </div>
+
+  <main>
+
+    <!-- Title -->
+    <div class="title-block">
+      <h1>Privacy Policy</h1>
+      <div class="meta">
+        <span><strong>App / Service:</strong> Eduverse Academy</span>
+        <span><strong>Effective Date:</strong> January 15, 2025</span>
+        <span><strong>Last Updated:</strong> January 15, 2025</span>
+      </div>
+      <p class="intro">
+        This Privacy Policy explains how <strong>Eduverse Academy</strong> ("we", "us", or "our")
+        collects, uses, stores, shares, and protects personal information when you use our website,
+        mobile application, or any related services (collectively, the "Service") available at
+        <a href="https://www.eduverseacademy.in" target="_blank" rel="noopener noreferrer">
+          https://www.eduverseacademy.in
+        </a>.
+      </p>
+      <p class="intro">
+        <strong>By using our Service, you agree to the collection and use of information
+        as described in this Privacy Policy.</strong> If you do not agree, please do not use the Service.
+      </p>
+    </div>
+
+    <!-- TOC -->
+    <nav class="toc" aria-label="Table of contents">
+      <p class="toc-label">Contents</p>
+      <ol>
+        <li><a href="#s1">1. Who We Are</a></li>
+        <li><a href="#s2">2. Information We Collect</a></li>
+        <li><a href="#s3">3. How We Use Your Information</a></li>
+        <li><a href="#s4">4. Data Sharing &amp; Disclosure</a></li>
+        <li><a href="#s5">5. Data Security</a></li>
+        <li><a href="#s6">6. Data Retention</a></li>
+        <li><a href="#s7">7. Data Deletion</a></li>
+        <li><a href="#s8">8. Children's Privacy</a></li>
+        <li><a href="#s9">9. Your Rights</a></li>
+        <li><a href="#s10">10. Third-Party Services</a></li>
+        <li><a href="#s11">11. Policy Updates</a></li>
+        <li><a href="#s12">12. Contact Us</a></li>
+      </ol>
+    </nav>
+
+    <!-- 1. WHO WE ARE -->
+    <section id="s1">
+      <h2>1. Who We Are</h2>
+      <p>
+        <strong>Eduverse Academy</strong> is an online educational platform providing live and
+        recorded classes for students in Class 1–12, scholarship exam preparation (4th &amp; 7th class),
+        JEE / NEET foundations, 10th board exam prep, MPSC / UPSC coaching, and language learning
+        courses. Content is delivered in English with Hindi / Urdu support.
+      </p>
+      <div class="infobox">
+        <div class="infobox-row">
+          <span class="infobox-label">Legal Name</span>
+          <span>Eduverse Academy</span>
+        </div>
+        <div class="infobox-row">
+          <span class="infobox-label">Owner</span>
+          <span>Ishrat Jabeen Shaikh Rehan</span>
+        </div>
+        <div class="infobox-row">
+          <span class="infobox-label">Address</span>
+          <span>Kausar Park, Naregaon, Aurangabad (Chhatrapati Sambhajinagar), Maharashtra – 431001, India</span>
+        </div>
+        <div class="infobox-row">
+          <span class="infobox-label">Email</span>
+          <span><a href="mailto:eduversacademy2026@gmail.com">eduversacademy2026@gmail.com</a></span>
+        </div>
+        <div class="infobox-row">
+          <span class="infobox-label">Website</span>
+          <span><a href="https://www.eduverseacademy.in" target="_blank" rel="noopener noreferrer">https://www.eduverseacademy.in</a></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. INFORMATION WE COLLECT -->
+    <section id="s2">
+      <h2>2. Information We Collect</h2>
+      <h3>2.1 Information You Provide to Us</h3>
+      <p>When you fill out the enquiry / contact form on our website or app, we collect:</p>
+      <table>
+        <thead>
+          <tr><th>Data Type</th><th>Example</th><th>Purpose</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Full Name</strong></td>
+            <td>Riya Khan</td>
+            <td>To address you and identify your enquiry</td>
+          </tr>
+          <tr>
+            <td><strong>Phone Number</strong></td>
+            <td>+91 98765 43210</td>
+            <td>To contact you about your course enquiry</td>
+          </tr>
+          <tr>
+            <td><strong>Email Address</strong></td>
+            <td>riya@example.com</td>
+            <td>To send course details and follow-ups</td>
+          </tr>
+          <tr>
+            <td><strong>Timestamp</strong></td>
+            <td>2025-01-15 10:30 IST</td>
+            <td>Record when the enquiry was submitted</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>2.2 Information Collected Automatically</h3>
+      <p>
+        We do <strong>not</strong> use cookies, tracking pixels, or analytics tools (such as
+        Google Analytics). We do <strong>not</strong> automatically collect device identifiers,
+        advertising IDs, or browsing history.
+      </p>
+      <p>
+        Our hosting provider (Vercel) may maintain standard server access logs including IP addresses
+        and browser user-agent strings. We do not use these to identify individual users.
+      </p>
+
+      <h3>2.3 Information We Do NOT Collect</h3>
+      <div class="notcollect">
+        <div class="notcollect-item"><span class="notcollect-x">✗</span><span>Payment card numbers or bank account details</span></div>
+        <div class="notcollect-item"><span class="notcollect-x">✗</span><span>Government ID numbers (Aadhaar, PAN, Passport)</span></div>
+        <div class="notcollect-item"><span class="notcollect-x">✗</span><span>Passwords or login credentials</span></div>
+        <div class="notcollect-item"><span class="notcollect-x">✗</span><span>Precise location / GPS data from your device</span></div>
+        <div class="notcollect-item"><span class="notcollect-x">✗</span><span>Photos, camera, microphone, or contacts access</span></div>
+        <div class="notcollect-item"><span class="notcollect-x">✗</span><span>Biometric data or health information</span></div>
+      </div>
+    </section>
+
+    <!-- 3. HOW WE USE -->
+    <section id="s3">
+      <h2>3. How We Use Your Information</h2>
+      <p>We use your personal information <strong>only</strong> for these purposes:</p>
+      <ul>
+        <li><strong>Respond to your enquiry</strong> — our team contacts you about courses you asked about.</li>
+        <li><strong>Provide counselling and admission guidance</strong> — to help choose the right learning path.</li>
+        <li><strong>Send relevant course information</strong> — schedules, materials, updates related to your enquiry.</li>
+        <li><strong>Maintain internal records</strong> — to manage student enquiries and improve admissions.</li>
+      </ul>
+      <div class="highlight highlight-red">
+        <strong>We will NEVER:</strong>
+        <ul>
+          <li>Sell, rent, or trade your personal data to any third party</li>
+          <li>Use your data for targeted advertising or ad profiling</li>
+          <li>Share your data with advertisers or data brokers</li>
+          <li>Send you unsolicited spam or marketing unrelated to your enquiry</li>
+          <li>Use your data for automated decision-making that affects you</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. DATA SHARING -->
+    <section id="s4">
+      <h2>4. Data Sharing &amp; Disclosure</h2>
+      <p>We do <strong>not sell, rent, or trade</strong> your personal information. We share data only in these limited situations:</p>
+
+      <h3>4.1 Google (Form Data Storage)</h3>
+      <p>
+        When you submit our contact form, your name, phone, email, and timestamp are transmitted
+        securely to <strong>Google Sheets</strong> via a <strong>Google Apps Script</strong> web
+        application. Google acts as a data processor on our behalf. The Sheet is private and
+        accessible only to authorised Eduverse Academy team members.
+        Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.
+      </p>
+
+      <h3>4.2 Cloudinary (Image Hosting)</h3>
+      <p>
+        Team member and course images are hosted on <strong>Cloudinary</strong>. Cloudinary does
+        <strong> not</strong> receive or process any personal data you submit through our forms.
+      </p>
+
+      <h3>4.3 Vercel (Website Hosting)</h3>
+      <p>
+        Our website is hosted on <strong>Vercel</strong>, which may process standard server request
+        data (IP, user-agent) as part of normal web hosting.
+        Governed by <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Vercel's Privacy Policy</a>.
+      </p>
+
+      <h3>4.4 Legal Requirements</h3>
+      <p>
+        We may disclose data if required by Indian law, a court order, or a government authority,
+        or to protect the rights, property, or safety of Eduverse Academy, our students, or others.
+      </p>
+
+      <div class="highlight highlight-blue">
+        <strong>Summary:</strong> Your personal data is shared with Google (form storage) only.
+        It is not shared with any advertiser, social media platform, data broker, or other third party.
+      </div>
+    </section>
+
+    <!-- 5. DATA SECURITY -->
+    <section id="s5">
+      <h2>5. Data Security</h2>
+      <p>We protect your information using the following measures:</p>
+      <ul>
+        <li><strong>HTTPS Encryption</strong> — all data is encrypted using TLS/SSL in transit.</li>
+        <li><strong>Encrypted Transmission to Google</strong> — form data is sent to Google over encrypted HTTPS.</li>
+        <li><strong>Restricted Access</strong> — the Google Sheet is private, accessible only to authorised team members.</li>
+        <li><strong>No Third-Party Trackers</strong> — no advertising scripts or tracking pixels that could expose your data.</li>
+      </ul>
+      <p>
+        While we implement industry-standard measures, no system is 100% secure. If you believe your
+        data has been compromised, contact us at
+        <a href="mailto:eduversacademy2026@gmail.com">eduversacademy2026@gmail.com</a> immediately.
+      </p>
+    </section>
+
+    <!-- 6. DATA RETENTION -->
+    <section id="s6">
+      <h2>6. Data Retention</h2>
+      <p>We retain your personal information for the following periods:</p>
+      <table>
+        <thead>
+          <tr><th>Data</th><th>Retention Period</th><th>Reason</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Enquiry form data (name, phone, email)</td>
+            <td>Up to 2 years from submission</td>
+            <td>Active student relationship management</td>
+          </tr>
+          <tr>
+            <td>Data after deletion request</td>
+            <td>Deleted within 30 days</td>
+            <td>User-requested removal</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        After the retention period or upon a valid deletion request, your data is
+        <strong> permanently deleted</strong> from our Google Sheets database.
+      </p>
+    </section>
+
+    <!-- 7. DATA DELETION -->
+    <section id="s7" class="section-highlight">
+      <h2>7. Data Deletion</h2>
+      <p>You have the right to request deletion of your personal data at any time, at no cost.</p>
+      <h3>How to Request Deletion</h3>
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">1</span>
+          <span>Send an email to <a href="mailto:eduversacademy2026@gmail.com">eduversacademy2026@gmail.com</a></span>
+        </div>
+        <div class="step">
+          <span class="step-num">2</span>
+          <span>Use the subject line: <strong>"Data Deletion Request"</strong></span>
+        </div>
+        <div class="step">
+          <span class="step-num">3</span>
+          <span>Include the <strong>name, phone number, and email</strong> you submitted so we can locate your record.</span>
+        </div>
+        <div class="step">
+          <span class="step-num">4</span>
+          <span>We will confirm deletion within <strong>30 days</strong> of receiving your request.</span>
+        </div>
+      </div>
+      <p>
+        Once deleted, all your personally identifiable information will be permanently and
+        irreversibly removed from our systems.
+      </p>
+    </section>
+
+    <!-- 8. CHILDREN'S PRIVACY -->
+    <section id="s8">
+      <h2>8. Children's Privacy</h2>
+      <p>Eduverse Academy provides educational services to students including children under the age of 13.</p>
+      <div class="highlight highlight-yellow">
+        <strong>Important:</strong> We do <strong>not</strong> knowingly collect personal information
+        directly from children under 13. Our enquiry forms must be completed by a
+        <strong> parent, guardian, or adult student (18 years or older)</strong> on behalf of the child.
+      </div>
+      <ul>
+        <li>We do not target advertising at children or build profiles of minors.</li>
+        <li>We do not collect sensitive information such as photos, location, or biometric data from any user, including children.</li>
+        <li>
+          If you are a parent or guardian and believe we have inadvertently collected personal information
+          from a child under 13 without your consent, please contact us immediately at
+          <a href="mailto:eduversacademy2026@gmail.com">eduversacademy2026@gmail.com</a>.
+          We will delete it within 7 days.
+        </li>
+      </ul>
+    </section>
+
+    <!-- 9. YOUR RIGHTS -->
+    <section id="s9">
+      <h2>9. Your Rights</h2>
+      <p>
+        You have the following rights over your personal data. To exercise any right, email
+        <a href="mailto:eduversacademy2026@gmail.com">eduversacademy2026@gmail.com</a>.
+        We will respond within <strong>30 days</strong>.
+      </p>
+      <div class="rights">
+        <div class="rights-item">
+          <span class="rights-icon">👁</span>
+          <div><strong>Access</strong><p>Request a copy of the personal data we hold about you.</p></div>
+        </div>
+        <div class="rights-item">
+          <span class="rights-icon">✏️</span>
+          <div><strong>Correction</strong><p>Ask us to correct inaccurate or incomplete data.</p></div>
+        </div>
+        <div class="rights-item">
+          <span class="rights-icon">🗑️</span>
+          <div><strong>Deletion</strong><p>Request permanent deletion of your data (see Section 7).</p></div>
+        </div>
+        <div class="rights-item">
+          <span class="rights-icon">🚫</span>
+          <div><strong>Objection</strong><p>Object to our use of your data for communications.</p></div>
+        </div>
+        <div class="rights-item">
+          <span class="rights-icon">📦</span>
+          <div><strong>Portability</strong><p>Receive your data in a structured, machine-readable format.</p></div>
+        </div>
+        <div class="rights-item">
+          <span class="rights-icon">🇮🇳</span>
+          <div><strong>India DPDPA 2023</strong><p>Rights under India's Digital Personal Data Protection Act, 2023.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. THIRD-PARTY SERVICES -->
+    <section id="s10">
+      <h2>10. Third-Party Services</h2>
+      <p>Our Service integrates the following third-party services:</p>
+      <table>
+        <thead>
+          <tr><th>Service</th><th>Purpose</th><th>Data Shared</th><th>Privacy Policy</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Google Sheets / Apps Script</strong></td>
+            <td>Store enquiry form submissions</td>
+            <td>Name, phone, email, timestamp</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Policy</a></td>
+          </tr>
+          <tr>
+            <td><strong>Cloudinary</strong></td>
+            <td>Host team/course images</td>
+            <td>None (static images only)</td>
+            <td><a href="https://cloudinary.com/privacy" target="_blank" rel="noopener noreferrer">Cloudinary Policy</a></td>
+          </tr>
+          <tr>
+            <td><strong>Vercel</strong></td>
+            <td>Website hosting</td>
+            <td>IP address, user-agent (server logs)</td>
+            <td><a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Vercel Policy</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Our Service does <strong>not</strong> contain third-party advertisements, advertising SDKs,
+        social media tracking pixels, or cross-app tracking of any kind.
+      </p>
+    </section>
+
+    <!-- 11. POLICY UPDATES -->
+    <section id="s11">
+      <h2>11. Policy Updates</h2>
+      <p>We may update this Privacy Policy to reflect changes in our practices or legal requirements. When we do:</p>
+      <ul>
+        <li>We will update the "Last Updated" date at the top of this page.</li>
+        <li>For significant changes, we will notify you by email or post a notice on our website.</li>
+        <li>Continued use of our Service after the update constitutes acceptance of the revised policy.</li>
+      </ul>
+      <p>
+        The latest version is always available at
+        <a href="https://www.eduverseacademy.in/privacy-policy" target="_blank" rel="noopener noreferrer">
+          https://www.eduverseacademy.in/privacy-policy
+        </a>.
+      </p>
+    </section>
+
+    <!-- 12. CONTACT US -->
+    <section id="s12">
+      <h2>12. Contact Us</h2>
+      <p>For any questions, requests, or concerns about this Privacy Policy or your personal data:</p>
+      <div class="contact-box">
+        <div class="contact-row">
+          <div>
+            <strong>Email (Privacy Requests)</strong>
+            <a href="mailto:eduversacademy2026@gmail.com">eduversacademy2026@gmail.com</a>
+            <span class="contact-note">Use subject: "Privacy Request" or "Data Deletion Request"</span>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div>
+            <strong>Postal Address</strong>
+            <span>
+              Eduverse Academy, Kausar Park, Naregaon,<br>
+              Aurangabad (Chhatrapati Sambhajinagar),<br>
+              Maharashtra – 431001, India
+            </span>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div>
+            <strong>Response Time</strong>
+            <span>We respond to all privacy-related requests within <strong>7 business days</strong>.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page footer -->
+    <div class="page-footer">
+      <span>&copy; 2025 Eduverse Academy. All rights reserved.</span>
+      <a href="https://www.eduverseacademy.in/">&#8592; Back to Homepage</a>
+    </div>
+
+  </main>
+</body>
+</html>
